@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dabkick.sdk.sampleapp.VideoPlayer">
+
+    <com.dabkick.videosdk.livesession.videoview.DkVideoView
+        android:id="@+id/fragment_watch_video_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:useDefaultControls="true"
+        app:videoScale="fitXY"/>
+
+    <com.dabkick.videosdk.publicsettings.DabKickVideoButton
+        android:id="@+id/dabkick_video_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
