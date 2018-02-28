@@ -28,10 +28,10 @@ allprojects {
             url "http://dabkick.bitnamiapp.com/artifactory/android-dev-videosdk-local/"
 
             //TO BE REMOVED ONCE CREDENTIAL ISSUE SOLVED
-            credentials {
+           /* credentials {
                 username 'gopal'
                 password 'AP4JwkvLRYtRbKkNryjX39zKYgT'
-            }
+            }*/
 
         }
 
