@@ -37,6 +37,7 @@ public class VideoPlayer extends Activity {
         });
         videoView.setVideoPath(dabKickVideoInfo.getVideoUrl());
 
+        // button which, upon click, starts DabKick session
         DabKickVideoButton button = findViewById(R.id.dabkick_video_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

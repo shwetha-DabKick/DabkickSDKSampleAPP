@@ -32,24 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
         setTitle("Categories");
 
-        //does not work without callback
-        //DabKick.register(MainActivity.this,  null);
-
-      /*  ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, Util.getCategories());
-
-        categoriesList.setAdapter(adapter);
-
-        categoriesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                Intent videoCategoryDisplay = new Intent(MainActivity.this, CategoryVideoListingActivity.class);
-                videoCategoryDisplay.putExtra("position", position);
-                startActivity(videoCategoryDisplay);
-            }
-        });*/
-
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(
                 this, 2, LinearLayoutManager.VERTICAL, false);
         categoriesList.setLayoutManager(layoutManager);
